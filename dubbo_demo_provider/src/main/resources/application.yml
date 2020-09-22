@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: dubbo-provide-demo
+dubbo:
+  application:
+    name: dubbo-provide-demo
+
+  registry:
+    address: zookeeper://127.0.0.1:2181
+
+  protocol:
+    name: dubbo
+    port: 20880
+
+  scan:
+    basePackages: com.lzq.demo.provider
+
+
+demo:
+  service:
+    version: 1.0.0
+
+
+server:
+  port: 8998
